@@ -19,7 +19,7 @@ export const chatReducer = (state = initialState, { type, payload }) => {
           isLoading:true
         }
       case ActionTypes.GET_IMAGE:
-        console.log(payload)
+       
         return{
           ...state,
           imageAi:[...state.imageAi,payload],

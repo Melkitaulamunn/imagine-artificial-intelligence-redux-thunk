@@ -28,14 +28,14 @@ const ImageAi = () => {
           {state.imageAi.map((message) => (
           <>
           <p className="prompt">{message.prompt}</p>
-          <img src={state.imageAi.answer[0].url} className="answer image-answer"/>
-          <img src={state.imageAi.answer[1].url} className="answer image-answer"/>
+          <img src={message.answer[0].url} className="answer image-answer"/>
+          <img src={message.answer[1].url} className="answer image-answer"/>
           </>
   ))}
   {state.isLoading && <p>Loading..</p>}
   </div>
         <div className="form">
-          <input onChange={handleChange} type="text" />
+          <input onChange={handleChange}  />
           <button onClick={handlesubmit}>GönDer📬</button>
         </div>
       </div>
