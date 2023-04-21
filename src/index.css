@@ -12,6 +12,7 @@
 }
 body{
   height:100vh;
+  overflow: hidden;
 }
 h1{
   font-size: 40px;
@@ -40,7 +41,7 @@ button{
   quotes: auto;
   text-align: center;
   text-decoration: none;
-  transition: all .15s;
+  transition: all .10s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -49,7 +50,7 @@ button{
 button:hover {
   background-color: #d2f78d;
   box-shadow: #FF6314 0 -6px 8px inset;
-  transform: scale(1.125);
+  transform: scale(1.005);
 }
 
 button:active {
@@ -81,7 +82,7 @@ button:active {
   display: flex;
   flex-direction: column;
   gap:30px;
-  height: 100%;
+  height: 90%;
 }
 .list{
   flex-grow:1;
@@ -91,6 +92,7 @@ button:active {
   display: flex;
   flex-direction: column;
   gap:40px;
+  overflow: auto;
 
 }
 .prompt{
@@ -105,7 +107,11 @@ button:active {
   padding: 5px 20px;
   border-radius: 8px 8px 8px 0px;
   background-color:#747bff;
-  color:white;  
+  color:white; 
+  max-width: 400px; 
+}
+.image-answer{
+  padding:20px;
 }
 .form{
   display: flex;

@@ -18,6 +18,7 @@ const ImageAi = () => {
     dispatch(getDataStart());
     dispatch(getImage(prompt));
   }
+  console.log("state.imageAi",state.ImageAi)
 
 
   return (

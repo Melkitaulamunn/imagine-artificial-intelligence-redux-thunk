@@ -44,7 +44,7 @@ export const getImage = (prompt)=> async(dispatch)=>{
     data: `{"prompt":"${prompt}","n":2,"size":"1024x1024"}`
   };
   const res=axios.request(options);
-  console.log("resim",res)
+  
    
   
 
