@@ -36,7 +36,7 @@ console.log("chatAi",state.chatAi)
 {state.isLoading && <p>Loading..</p>}
 </div>
       <div className="form">
-        <input onChange={handleChange} type="text" />
+        <input placeholder="Yapay zekaya bişey sor"onChange={handleChange} type="text" />
         <button onClick={handlesubmit}>GönDer📬</button>
       </div>
     </div>

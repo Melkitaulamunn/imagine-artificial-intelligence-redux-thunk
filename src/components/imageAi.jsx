@@ -36,7 +36,7 @@ const ImageAi = () => {
   {state.isLoading && <p>Loading..</p>}
   </div>
         <div className="form">
-          <input onChange={handleChange}  />
+          <input placeholder="Yapay zekadan bi resim iste" onChange={handleChange}  />
           <button onClick={handlesubmit}>GönDer📬</button>
         </div>
       </div>
